@@ -1,4 +1,4 @@
-module GroupProject {
+module FlightReservationSystem {
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.fxml;

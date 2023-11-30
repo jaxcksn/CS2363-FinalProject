@@ -1,0 +1,73 @@
+.root {
+    -fx-accent: #00205B !important;
+    -fx-focus-color: #00205B !important;
+    -fx-faint-focus-color: #00205B22 !important;
+}
+
+
+#seatGrid .button {
+    -fx-pref-width: 10px;
+    -fx-pref-height: 10px;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-font-size: 5px;
+    -fx-background-color: rgb(8,29,106);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+#seatGrid .button:focused {
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+#seatGrid #RowLabel {
+    -fx-font-size: 9px;
+}
+
+
+#seatGrid .button:filled {
+    -fx-background-color: #BF0D3E;
+}
+
+#seatGrid .button:hover {
+    -fx-background-color: rgb(66, 92, 189);
+}
+
+#seatGrid .button:filled:hover {
+    -fx-background-color: #e02054;
+}
+
+#seatGrid .button:selected {
+    -fx-background-color: rgb(129, 151, 224);
+}
+
+#seatGrid .button:filled:selected {
+    -fx-background-color: #f15d84;
+}
+
+
+
+#lonestarLogo {
+    -fx-text-fill: #00205B;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+#infoHeader {
+    -fx-font-weight: bold;
+}
+
+#flightIdent {
+    -fx-text-fill: #00205B;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+#seatLabel {
+    -fx-font-weight: bold;
+}
+
+#fsrTitle {
+    -fx-text-fill: #BF0D3E;
+}

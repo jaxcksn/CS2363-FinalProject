@@ -91,8 +91,9 @@
                <children>
                   <Label fx:id="infoHeader" text="Flight Information" />
                   <Label fx:id="flightIdent" prefHeight="30.0" prefWidth="110.0" text="TXN-100" />
-                  <Label fx:id="routeText" prefHeight="17.0" prefWidth="114.0" text="HOU - HOU" />
-                  <Label fx:id="departTime" prefHeight="17.0" prefWidth="120.0" text="Departs 0000z" />
+                  <Label fx:id="routeText" prefHeight="17.0" prefWidth="222.0" text="HOU - HOU" />
+                  <Label fx:id="departTime" prefHeight="17.0" prefWidth="151.0" text="Departs 0000z" />
+                  <Label fx:id="distanceLabel" prefHeight="17.0" prefWidth="219.0" text="Distance: 1000 miles" />
                   <Label text="Airbus A220-300" />
                   <Separator prefWidth="200.0">
                      <VBox.margin>

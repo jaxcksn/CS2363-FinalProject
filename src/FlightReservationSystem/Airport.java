@@ -114,7 +114,7 @@ public final class Airport {
      * @return A string of the following format: DepatureIataCode - ArrivalIataCode
      */
     public static String getRouteString(Airport departure, Airport arrival) {
-        return departure.iataCode+" - "+arrival.iataCode;
+        return departure.cityName+" to "+arrival.cityName;
     }
 
     /**

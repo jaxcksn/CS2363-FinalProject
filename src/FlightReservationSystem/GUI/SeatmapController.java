@@ -32,6 +32,8 @@ public class SeatmapController {
     @FXML
     public Button bookButton;
     @FXML
+    public Label distanceLabel;
+    @FXML
     private GridPane seatGrid;
     @FXML
     private ComboBox<String> beverageSelection;
@@ -136,6 +138,7 @@ public class SeatmapController {
         flightIdent.setText(flight.ident);
         routeText.setText(Airport.getRouteString(flight.departs,flight.arrives));
         departTime.setText("Departs at "+flight.departTime);
+        distanceLabel.setText(flight.getFlightDistance()+" miles");
     }
 
     public void setFlightUpdater(ControllerListener listener) {

@@ -54,8 +54,8 @@ public final class FlightDatabase {
         flightList.add(new Flight("TXN-34","LBB","DAL","0430Z","0515Z"));
         flightList.add(new Flight("TXN-23","LBB","HOU","1200Z","1345Z"));
         flightList.add(new Flight("TXN-45","SAT","LBB","0500Z","0530Z"));
-        flightList.add(new Flight("TXN-300","AUS","LBB","0500Z","0530Z"));
-        flightList.add(new Flight("TXN-99","ELP","DAL","0500Z","0530Z"));
+        flightList.add(new Flight("TXN-300","AUS","LBB","1400Z","1520Z"));
+        flightList.add(new Flight("TXN-99","ELP","DAL","1000Z","1145Z"));
 
         try {
             //We'll now load in our name text files, and create a list from them.

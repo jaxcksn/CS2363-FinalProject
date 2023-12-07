@@ -1,4 +1,4 @@
-# Class BeverageOrder [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java)  
+# Class BeverageOrder [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java)  
 Access: public  
 Description:  
  > A manager for a reservations beverage order.  
@@ -20,16 +20,16 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### ArrayList<String> beverageOptions [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L)
+#### ArrayList<String> beverageOptions [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L)
 + Access: private  
 
-#### String beverageSelection [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L)
+#### String beverageSelection [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L)
 
 + Access: private  
 
 ## Methods
 
-### getBeverageOptions [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L48)
+### getBeverageOptions [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L48)
 
 + Description: Getter for the beverage options list.   
 + Access: public  
@@ -38,7 +38,7 @@ package: FlightReservationSystem
 This method has no parameters.  
 
 
-### getBeverageList [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L57)
+### getBeverageList [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L57)
 
 + Description: Gets the beverage options ArrayList as an Observable list for use in JavaFX code.   
 + Access: public  
@@ -47,7 +47,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getForRow [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L66)
+### getForRow [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L66)
 
 + Description: Gets all the available beverages for a row.   
 + Access: public  
@@ -59,7 +59,7 @@ This method has no parameters.
 | row | int | The row to get beverages for  |  
 
 
-### setBeverageSelection [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L91)
+### setBeverageSelection [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L91)
 
 + Description: Sets the selected beverage.   
 + Access: public  
@@ -70,7 +70,7 @@ This method has no parameters.
 | selection | String | The selected beverage  |  
 
 
-### getBeverageSelection [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemBeverageOrder.java#L102)
+### getBeverageSelection [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/BeverageOrder.java#L102)
 
 + Description: Getter for the beverage selection.   
 + Access: public  

@@ -1,4 +1,4 @@
-# Class Seat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemSeat.java)  
+# Class Seat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Seat.java)  
 
 
 
@@ -20,19 +20,19 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### int row [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemSeat.java#L)
+#### int row [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Seat.java#L)
 
 
 
 + Access: public  
 
-#### int col [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemSeat.java#L)
+#### int col [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Seat.java#L)
 
 
 
 + Access: public  
 
-#### String seatClass [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemSeat.java#L)
+#### String seatClass [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Seat.java#L)
 
 
 
@@ -41,7 +41,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### calculateSeatClass [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemSeat.java#L34)
+### calculateSeatClass [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Seat.java#L34)
 
 + Description: Method to assign seat based on row first three rows will be Business next 5 will be Premium and rest will be Economy.   
 + Access: public  
@@ -53,7 +53,7 @@ package: FlightReservationSystem
 | row | int | The row of the seat  |  
 
 
-### getSeatClass [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemSeat.java#L48)
+### getSeatClass [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Seat.java#L48)
 
 + Description: Getter for the seat param   
 + Access: public  

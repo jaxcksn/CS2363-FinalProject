@@ -1,4 +1,4 @@
-# Class Flight [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java)  
+# Class Flight [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java)  
 
 
 
@@ -21,49 +21,49 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### String ident [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L)
+#### String ident [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L)
 
 
 
 + Access: public  
 + Modifiers: final 
 
-#### Airport departs [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L)
+#### Airport departs [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L)
 
 
 
 + Access: public  
 + Modifiers: final 
 
-####   [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L20)
+####   [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L20)
 
  > /** The airport the flight arrives to*/  
 
 + Access: public  
 + Modifiers: final 
 
-#### String departTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L)
+#### String departTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L)
 
 
 
 + Access: public  
 + Modifiers: final 
 
-#### String arrivalTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L)
+#### String arrivalTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L)
 
 
 
 + Access: public  
 + Modifiers: final 
 
-#### Reservable[][] reservations [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L)
+#### Reservable[][] reservations [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### double flightDistance [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L)
+#### double flightDistance [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L)
 
 
 
@@ -72,7 +72,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### getReservations [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L56)
+### getReservations [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L56)
 
 + Description: Gets all the reservations   
 + Access: public  
@@ -81,7 +81,7 @@ package: FlightReservationSystem
 This method has no parameters.  
 
 
-### getSeatmapDimensions [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L64)
+### getSeatmapDimensions [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L64)
 
 + Description: Gets the dimensions of the reservation array.   
 + Access: public  
@@ -90,7 +90,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getReservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L74)
+### getReservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L74)
 
 + Description: Gets a reservation at a location in the reservations array.   
 + Access: public  
@@ -101,7 +101,7 @@ This method has no parameters.
 | getAt | Integer> | The row and column where the reservation should be pulled from  |  
 
 
-### setReservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L86)
+### setReservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L86)
 
 + Description: Sets a location in the reservations array to the given reservable. This overload is just for readability.   
 + Access: public  
@@ -113,7 +113,7 @@ This method has no parameters.
 | resIndex | Integer> | Where the reservation should be updated at.  |  
 
 
-### setReservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L102)
+### setReservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L102)
 
 + Description: Sets a location in the reservations array to the given reservable. This overload uses the seat number in the reservable.   
 + Access: public  
@@ -124,7 +124,7 @@ This method has no parameters.
 | updatedReservable | Reservable |  |  
 
 
-### getIdent [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L111)
+### getIdent [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L111)
 
 + Description: Getter for the ident param. Used by JavaFX.   
 + Access: public  
@@ -133,7 +133,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getDeparts [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L119)
+### getDeparts [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L119)
 
 + Description: Getter for the departs param. Used by JavaFX.   
 + Access: public  
@@ -142,7 +142,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getArrives [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L127)
+### getArrives [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L127)
 
 + Description: Getter for the arrives param. Used by JavaFX.   
 + Access: public  
@@ -151,7 +151,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getDepartTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L135)
+### getDepartTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L135)
 
 + Description: Getter for the departTime param. Used by JavaFX.   
 + Access: public  
@@ -160,7 +160,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getArrivalTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L143)
+### getArrivalTime [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L143)
 
 + Description: Getter for the arrivalTime param. Used by JavaFX.   
 + Access: public  
@@ -169,7 +169,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getFlightDistance [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlight.java#L151)
+### getFlightDistance [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Flight.java#L151)
 
 + Description: Getter for the flightDistance param. Used by JavaFX.   
 + Access: public  

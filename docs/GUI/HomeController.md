@@ -1,4 +1,4 @@
-# Class HomeController [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemGUI/HomeController.java)  
+# Class HomeController [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/GUI/HomeController.java)  
 
 
 
@@ -40,7 +40,7 @@ package: FlightReservationSystem.GUI
 
 ## Methods
 
-### onFlightUpdated [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemGUI/HomeController.java#L55)
+### onFlightUpdated [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/GUI/HomeController.java#L55)
 
 + Description:   
 + Access: public  
@@ -51,7 +51,7 @@ package: FlightReservationSystem.GUI
 | updatedFlight | Flight |  |  
 
 
-### initialize [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemGUI/HomeController.java#L71)
+### initialize [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/GUI/HomeController.java#L71)
 
 + Description:   
 + Access: public  
@@ -60,7 +60,7 @@ package: FlightReservationSystem.GUI
 This method has no parameters.  
 
 
-### setupHomeView [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemGUI/HomeController.java#L89)
+### setupHomeView [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/GUI/HomeController.java#L89)
 
 + Description: This method is used to set up all the needed data values for the view and is called before the view is actually created.   
 + Access: public  
@@ -71,7 +71,7 @@ This method has no parameters.
 | flightList | List<Flight> |  |  
 
 
-### showSeatmapView [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemGUI/HomeController.java#L101)
+### showSeatmapView [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/GUI/HomeController.java#L101)
 
 + Description:   
 + Access: private  

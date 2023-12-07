@@ -1,4 +1,4 @@
-# Class Contact [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java)  
+# Class Contact [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java)  
 
 
 
@@ -23,31 +23,31 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### String firstName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L)
+#### String firstName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L)
 
 
 
 + Access: private  
 
-#### String lastName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L)
+#### String lastName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L)
 
 
 
 + Access: private  
 
-#### int age [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L)
+#### int age [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L)
 
 
 
 + Access: private  
 
-#### String phoneNumber [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L)
+#### String phoneNumber [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L)
 
 
 
 + Access: private  
 
-#### String relation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L)
+#### String relation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L)
 
 
 
@@ -55,7 +55,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### getFirstName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L37)
+### getFirstName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L37)
 
 + Description:   
 + Access: public  
@@ -64,7 +64,7 @@ package: FlightReservationSystem
 This method has no parameters.  
 
 
-### getLastName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L42)
+### getLastName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L42)
 
 + Description:   
 + Access: public  
@@ -73,7 +73,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### getAge [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemContact.java#L47)
+### getAge [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Contact.java#L47)
 
 + Description:   
 + Access: public  

@@ -1,4 +1,4 @@
-# Class Reservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservation.java)  
+# Class Reservation [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservation.java)  
 
 
 
@@ -21,7 +21,7 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### BeverageOrder order [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservation.java#L)
+#### BeverageOrder order [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservation.java#L)
 
 
 
@@ -30,7 +30,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### getBeverageOrder [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservation.java#L25)
+### getBeverageOrder [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservation.java#L25)
 
 + Description: Getter for the beverage order manager.   
 + Access: public  

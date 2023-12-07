@@ -1,4 +1,4 @@
-# Class FlightReservationSystem [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightReservationSystem.java)  
+# Class FlightReservationSystem [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightReservationSystem.java)  
 
 
 
@@ -36,7 +36,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### showHome [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightReservationSystem.java#L34)
+### showHome [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightReservationSystem.java#L34)
 
 + Description: This function shows the primary home screen for the application.   
 + Access: public  
@@ -49,7 +49,7 @@ package: FlightReservationSystem
 | stage | Stage | The primary stage of the application  |  
 
 
-### start [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightReservationSystem.java#L54)
+### start [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightReservationSystem.java#L54)
 
 + Description:   
 + Access: public  
@@ -60,7 +60,7 @@ package: FlightReservationSystem
 | stage | Stage |  |  
 
 
-### main [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightReservationSystem.java#L97)
+### main [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightReservationSystem.java#L97)
 
 + Description: This is the main entry point for the application it launches the UI for use by everyone.   
 + Access: public  

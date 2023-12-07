@@ -1,4 +1,4 @@
-# Class Airport [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java)  
+# Class Airport [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java)  
 
 
 
@@ -20,28 +20,28 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### String iataCode [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L)
+#### String iataCode [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### String fullName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L)
+#### String fullName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### String cityName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L)
+#### String cityName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### Coordinates location [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L)
+#### Coordinates location [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L)
 
 
 
@@ -50,7 +50,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### Coordinates [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L18)
+### Coordinates [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L18)
 
 + Description: This is a record used to represent a lat and lon coordinate.   
 + Access: public  
@@ -62,7 +62,7 @@ package: FlightReservationSystem
 | lon | Double | The longitude  |  
 
 
-### iataCode [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L37)
+### iataCode [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L37)
 
 + Description: Public getter method for the iataCode   
 + Access: public  
@@ -71,7 +71,7 @@ package: FlightReservationSystem
 This method has no parameters.  
 
 
-### fromIATA [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L49)
+### fromIATA [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L49)
 
 + Description: Returns an airport object for commonly used Iata codes by the airlines.   
 + Access: public  
@@ -83,7 +83,7 @@ This method has no parameters.
 | iataCode | String | The known iata code  |  
 
 
-### getRouteString [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L116)
+### getRouteString [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L116)
 
 + Description: Utility method for making a stylized string representing a route between two airports.   
 + Access: public  
@@ -96,7 +96,7 @@ This method has no parameters.
 | arrival | Airport | The arrival airport  |  
 
 
-### getRouteDistance [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemAirport.java#L128)
+### getRouteDistance [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Airport.java#L128)
 
 + Description: Gets the distance between two airfields in miles. This uses Haversine formula to calculate the distance which accounts for the earths curvature.   
 + Access: public  

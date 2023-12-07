@@ -1,4 +1,4 @@
-# Abstract Class Reservable [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java)  
+# Abstract Class Reservable [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java)  
 
 
 
@@ -20,13 +20,13 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### Seat seat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java#L)
+#### Seat seat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java#L)
 
 
 
 + Access: private  
 
-#### Person passenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java#L)
+#### Person passenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java#L)
 
 
 
@@ -34,7 +34,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### getSeat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java#L29)
+### getSeat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java#L29)
 
 + Description: Getter for the seat param   
 + Access: public  
@@ -43,7 +43,7 @@ package: FlightReservationSystem
 This method has no parameters.  
 
 
-### setSeat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java#L37)
+### setSeat [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java#L37)
 
 + Description: Setter for the seat param   
 + Access: public  
@@ -54,7 +54,7 @@ This method has no parameters.
 | seat | Seat |  |  
 
 
-### getPassenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java#L45)
+### getPassenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java#L45)
 
 + Description: Getter for the passenger param   
 + Access: public  
@@ -63,7 +63,7 @@ This method has no parameters.
 This method has no parameters.  
 
 
-### setPassenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemReservable.java#L53)
+### setPassenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Reservable.java#L53)
 
 + Description: Setter for the passenger param   
 + Access: public  

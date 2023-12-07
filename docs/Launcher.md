@@ -1,4 +1,4 @@
-# Class Launcher [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemLauncher.java)  
+# Class Launcher [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Launcher.java)  
 
 
 
@@ -22,7 +22,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### main [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemLauncher.java#L17)
+### main [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Launcher.java#L17)
 
 + Description: The main entry function for the program.   
 + Access: public  

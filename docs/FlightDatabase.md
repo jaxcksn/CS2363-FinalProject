@@ -1,4 +1,4 @@
-# Class FlightDatabase [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java)  
+# Class FlightDatabase [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java)  
 
 
 
@@ -29,48 +29,48 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### List<Flight> flightList [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+#### List<Flight> flightList [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
 + Access: public  
 + Modifiers: final 
 
-#### List<String> maleNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+#### List<String> maleNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### List<String> femaleNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+#### List<String> femaleNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### List<String> lastNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+#### List<String> lastNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### boolean didLoadNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+#### boolean didLoadNames [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
 + Access: private  
 
-####  String> defaultMaleName  [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+####  String> defaultMaleName  [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
 + Access: private  
 + Modifiers: static final 
 
-####  String> defaultFemaleName  [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L)
+####  String> defaultFemaleName  [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L)
 
 
 
@@ -79,7 +79,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### generateRandomName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L98)
+### generateRandomName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L98)
 
 + Description:   
 + Access: private  
@@ -90,7 +90,7 @@ package: FlightReservationSystem
 | random | Random | We should just pass an existing random object to this function  |  
 
 
-### listFromFile [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L133)
+### listFromFile [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L133)
 
 + Description:   
 + Access: private  
@@ -102,7 +102,7 @@ package: FlightReservationSystem
 | fileName | String | The file to read from should be in the same directory as this in the source code.  |  
 
 
-### generateRandomReservations [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightDatabase.java#L152)
+### generateRandomReservations [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightDatabase.java#L152)
 
 + Description:   
 + Access: private  

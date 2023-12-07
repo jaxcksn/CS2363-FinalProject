@@ -1,4 +1,4 @@
-# Class FlightReservationException [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemFlightReservationException.java)  
+# Class FlightReservationException [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/FlightReservationException.java)  
 
 
 

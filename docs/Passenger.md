@@ -1,4 +1,4 @@
-# Class Passenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java)  
+# Class Passenger [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java)  
 
 
 
@@ -24,41 +24,41 @@ package: FlightReservationSystem
 
 ## Member Variables
 
-#### String firstName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L)
+#### String firstName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### String lastName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L)
+#### String lastName [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### int age [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L)
+#### int age [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### String frequentFlyerNumber [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L)
+#### String frequentFlyerNumber [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L)
 
 
 
 + Access: private  
 + Modifiers: final 
 
-#### int airlineMiles [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L)
+#### int airlineMiles [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L)
 
 
 
 + Access: private  
 
-#### Contact emergencyContact [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L)
+#### Contact emergencyContact [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L)
 
 
 
@@ -67,7 +67,7 @@ package: FlightReservationSystem
 
 ## Methods
 
-### createFFN [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystemPassenger.java#L51)
+### createFFN [[src]](https://github.com/jaxcksn/CS2363-FinalProject/tree/main/src/FlightReservationSystem/Passenger.java#L51)
 
 + Description: Creates a random Frequent Flyer number   
 + Access: public  

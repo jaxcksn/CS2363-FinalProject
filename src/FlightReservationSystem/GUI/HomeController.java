@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 import java.util.List;
 import java.util.Objects;
 
-public class fsrHomeController implements fsrListener {
+public class HomeController implements ControllerListener {
     @FXML
     public TableView flightTable;
     @FXML
@@ -31,6 +31,8 @@ public class fsrHomeController implements fsrListener {
     public TableColumn identCol;
     @FXML
     public Button viewButton;
+    @FXML
+    public TableColumn distanceCol;
 
 
     ObservableList<Flight> oFlightList;
@@ -53,6 +55,7 @@ public class fsrHomeController implements fsrListener {
         arriveCol.setCellValueFactory(new PropertyValueFactory<>("arrives"));
         departTimeCol.setCellValueFactory(new PropertyValueFactory<>("departTime"));
         arriveTimeCol.setCellValueFactory(new PropertyValueFactory<>("arrivalTime"));
+        distanceCol.setCellValueFactory(new PropertyValueFactory<>("flightDistance"));
 
         viewButton.setOnAction(event -> showFlightView());
     }
@@ -70,10 +73,10 @@ public class fsrHomeController implements fsrListener {
             try {
 
                 FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(
-                        fsrHomeController.class.getResource("fsrSeatmap.fxml")));
+                        HomeController.class.getResource("seatmapView.fxml")));
                 Parent root = loader.load();
 
-                fsrSeatmapController controller = (fsrSeatmapController) loader.getController();
+                SeatmapController controller = (SeatmapController) loader.getController();
                 controller.setFlight(selectedFlight);
                 controller.setFlightUpdater(this);
                 try {

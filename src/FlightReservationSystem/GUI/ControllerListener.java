@@ -2,6 +2,6 @@ package FlightReservationSystem.GUI;
 
 import FlightReservationSystem.Flight;
 
-public interface fsrListener {
+public interface ControllerListener {
     void onFlightUpdated(Flight updatedFlight);
 }

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightReservationSystem.GUI.fsrHomeController">
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightReservationSystem.GUI.HomeController">
    <top>
       <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
          <children>
@@ -35,11 +35,14 @@
             </Label>
             <TableView fx:id="flightTable" prefWidth="200.0">
               <columns>
-                <TableColumn fx:id="identCol" editable="false" prefWidth="204.0" resizable="false" text="Flight Identifier" />
+                <TableColumn fx:id="identCol" editable="false" prefWidth="100.0" resizable="false"
+                             text="Flight Identifier" />
                 <TableColumn fx:id="departCol" editable="false" prefWidth="86.0" resizable="false" text="Departs" />
                   <TableColumn fx:id="arriveCol" editable="false" prefWidth="86.0" resizable="false" text="Arrives" />
                   <TableColumn fx:id="departTimeCol" editable="false" prefWidth="102.0" resizable="false" text="Departure Time" />
                   <TableColumn fx:id="arriveTimeCol" editable="false" prefWidth="101.0" resizable="false" text="Arrival Time" />
+                 <TableColumn fx:id="distanceCol" editable="false" prefWidth="101.0" resizable="false"
+                              text="Distance (Miles)" />
               </columns>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

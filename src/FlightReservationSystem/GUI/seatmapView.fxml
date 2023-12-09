@@ -132,6 +132,11 @@
                   <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="225.0">
                      <children>
                         <Button fx:id="bookButton" disable="true" mnemonicParsing="false" text="Book Seat" />
+                        <Button fx:id="infobtn" mnemonicParsing="false" text="More Info">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
                      </children>
                   </HBox>
                </children>

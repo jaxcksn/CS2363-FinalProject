@@ -170,7 +170,7 @@ public final class FlightDatabase {
                 //Set the reservation in the flight.
                 flight.setReservation(new Reservation(new Seat(row, col),
                         new Passenger(randomName.x(), randomName.y(), random.nextInt(18, 81),
-                                Passenger.createFFN("TX"),0,null)));
+                                Passenger.createFFN("TX"),random.nextInt(150000),null)));
             }
         }
     }

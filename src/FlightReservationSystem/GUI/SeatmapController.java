@@ -3,9 +3,17 @@ import FlightReservationSystem.*;
 import FlightReservationSystem.util.Tuple;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.css.PseudoClass;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.util.Objects;
 
 /**
  * This is most complicated class in the package, the controller for the seatmapView.fxml file.
@@ -47,6 +55,8 @@ public class SeatmapController {
     private ComboBox<String> beverageSelection;
     @FXML
     private Button lastButtonPressed;
+    @FXML
+    private Button infobtn;
     /* ========================================= */
 
     /** A reference to the listener for the home controller, so we can update values. */
@@ -77,6 +87,7 @@ public class SeatmapController {
             lastName.setDisable(!b);
             age.setDisable(!b);
             beverageSelection.setDisable(!b);
+            infobtn.setDisable(!b);
             bookButton.setDisable(false);
             if(b) {
                 //The form should be editable.
@@ -87,7 +98,7 @@ public class SeatmapController {
                 bookButton.setOnAction(event -> onBookButton());
             } else {
                 //Form should not be editable.
-                //Change labels
+                //Change
                 formHeader.setText("View Seat Reservation");
                 bookButton.setText("Edit Seat");
                 //Change button action
@@ -169,7 +180,7 @@ public class SeatmapController {
     private Reservation bookNewReservation() {
         lastButtonPressed.pseudoClassStateChanged(FILLED_PSEUDO,true);
         Reservation newReservation = new Reservation(new Seat(lastLoc.x(), lastLoc.y()),
-                new Passenger(firstName.getText().toUpperCase(),lastName.getText().toUpperCase(),
+                new Passenger(titleCase(firstName.getText()),titleCase(lastName.getText()),
                         age.getValueFactory().getValue()));
         try {
             newReservation.getBeverageOrder().setBeverageSelection(beverageSelection.getSelectionModel().getSelectedItem());
@@ -180,6 +191,11 @@ public class SeatmapController {
                 throw new RuntimeException(ex);
             }
 
+        }
+
+        if(((Passenger) newReservation.getPassenger()).getFrequentFlyerNumber() != null){
+            Passenger passenger = (Passenger) newReservation.getPassenger();
+            passenger.addAirlineMiles(activeFlight.getFlightDistance());
         }
 
         return newReservation;
@@ -205,6 +221,24 @@ public class SeatmapController {
      */
     public void setFlightUpdater(ControllerListener listener) {
         this.homeControllerListener = listener;
+    }
+
+    /**
+     * Converts a given string to title Case
+     * @param input String to convert to title Case
+     * @return A string in title case
+     */
+    public static String titleCase(String input) {
+        //Convert to all lowercase
+        String lowered = input.toLowerCase();
+        //Get the first character
+        char firstChar = lowered.charAt(0);
+        //Create a string builder for the string
+        StringBuilder titled = new StringBuilder(lowered);
+        //Change the first character to the uppercase version
+        titled.setCharAt(0,Character.toUpperCase(firstChar));
+        //Return the string
+        return titled.toString();
     }
 
     /**
@@ -238,8 +272,51 @@ public class SeatmapController {
         age.setDisable(true);
         bookButton.setDisable(true);
         beverageSelection.setDisable(true);
+        infobtn.setDisable(true);
+        infobtn.setOnAction(null);
         //We need to set the constraints for the age spinner.
         age.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1,120,18));
+    }
+
+    /**
+     * Shows a view with some more passenger information.
+     * @param person The person who we should view the information for.
+     */
+    public void viewPassengerInformation(Person person) {
+        //We'll need to do a cast.
+        Passenger passenger = (Passenger) person;
+        //Create a stage
+        Stage stage = new Stage();
+        //We'll vertically center the info.
+        VBox outer = new VBox(10);
+        VBox inner = new VBox(10);
+
+        outer.setAlignment(Pos.TOP_LEFT);
+        inner.setAlignment(Pos.CENTER_LEFT);
+        VBox.setVgrow(inner, Priority.ALWAYS);
+        outer.setPadding(new Insets(10,10,10,10));
+
+
+        //Create all the Labels needed
+        Label title =
+                new Label("Information for "+titleCase(passenger.getFirstName())+" "+titleCase(passenger.getLastName()));
+        Label loyalty = new Label("Frequent Flyer Number: "+(passenger.getFrequentFlyerNumber() != null ?
+                passenger.getFrequentFlyerNumber() : "Not Registered"));
+        Label miles = new Label("Miles: "+ passenger.getAirlineMiles());
+        Label hasEmergencyContact = new Label("Has Emergency Contact: "+ (passenger.getEmergencyContact() == null ?
+                "False" : "True"));
+        title.setStyle("-fx-font-size: 16px");
+
+        //Add them to their appropriate parent nodes.
+        inner.getChildren().addAll(loyalty,miles,hasEmergencyContact);
+        outer.getChildren().addAll(title,inner);
+
+        //Create and show the scene.
+        Scene scene = new Scene(outer,400,200);
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("main.css")).toExternalForm());
+        stage.setScene(scene);
+        stage.show();
+
     }
 
     /**
@@ -355,8 +432,12 @@ public class SeatmapController {
         //Now get the associated reservation (if it exists)
         Reservable reservation = activeFlight.getReservation(loc);
         if(reservation == null) {
+
             // If we don't have a reservation, we'll let the user edit the form.
            setIsFormEditable(true);
+           //Except for this, since the reservation is null.
+           infobtn.setDisable(true);
+           infobtn.setOnAction(null);
 
            // Clear out the form so that it's blank.
            firstName.setText("");
@@ -371,10 +452,13 @@ public class SeatmapController {
         } else {
             // To prevent accident changes, we'll not let the user edit.
             setIsFormEditable(false);
+            //Except for this.
+            infobtn.setDisable(false);
+            infobtn.setOnAction(eventInfo -> viewPassengerInformation(reservation.getPassenger()));
 
             // Fill in the form with the information from the reservation
-            firstName.setText(reservation.getPassenger().getFirstName());
-            lastName.setText(reservation.getPassenger().getLastName());
+            firstName.setText(titleCase(reservation.getPassenger().getFirstName()));
+            lastName.setText(titleCase(reservation.getPassenger().getLastName()));
             age.getValueFactory().setValue(reservation.getPassenger().getAge());
 
             // Set beverages combo box to the selected.
